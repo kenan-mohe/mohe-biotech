@@ -1,10 +1,29 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}
     Mohe BioTech
 {% endblock title %}
 
+{% block style %}
+    <link rel="stylesheet" href="{% static "mainpage/css/index.css" %}">
+{% endblock style %}
+
+{% block scripts %}
+    <script src="{% static "mainpage/js/scroll.js" %}" defer></script>
+{% endblock scripts %}
+
 {% block content %}
-    Welcome To Mohe
+    <div class="page page1">
+        <h1 class="h1">WELCOME TO MOHE</h1>
+    </div>
+
+    <div class="page page2">
+        <h1 class='h2'><i>WE CARE</i></h1>
+    </div>
+
+    <div class="page page3">
+        <h1 class='h3'>FOR PEOPLE WHO CARE</h1>
+    </div>
 {% endblock content %}
 
